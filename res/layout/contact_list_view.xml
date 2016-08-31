@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <com.suntek.contact.view.SlidingLinearLayout
+        android:id="@+id/slidingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <ListView
+            android:id="@+id/contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#000000"
+            android:divider="#00000000"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:visibility="visible" />
+    </com.suntek.contact.view.SlidingLinearLayout>
+
+    <com.suntek.contact.view.QuickAlphabeticBar
+        android:id="@+id/fast_scroller"
+        android:layout_width="77dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top|end|center"
+        android:layout_marginTop="0dip"
+        android:background="@null"
+        android:scaleType="centerInside"
+        >
+    </com.suntek.contact.view.QuickAlphabeticBar>
+
+    <TextView
+        android:id="@+id/fast_position"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="34dip"
+        android:gravity="center"
+        android:padding="2dip"
+        android:textColor="#FFFFFF"
+        android:textSize="57sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
